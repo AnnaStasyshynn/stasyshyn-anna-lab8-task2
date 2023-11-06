@@ -19,7 +19,36 @@ def validate_board(board: list) -> bool:
     False
     """
     pass
-def check_section(section: list) -> bool | None:
+def board_to_list(board: list) -> list[list]:
+    """
+    Turn board into a list of lists containing
+    each slot of of the board.
+    >>> board = [\
+ "**** ****",\
+ "***1 ****",\
+ "**  3****",\
+ "* 4 1****",\
+ "     9 5 ",\
+ " 6  83  *",\
+ "3   1  **",\
+ "  8  2***",\
+ "  2  ****"\
+]
+    >>> board_to_list(board)
+    [['*', '*', '*', '*', ' ', '*', '*', '*', '*'], \
+['*', '*', '*', '1', ' ', '*', '*', '*', '*'], \
+['*', '*', ' ', ' ', '3', '*', '*', '*', '*'], \
+['*', ' ', '4', ' ', '1', '*', '*', '*', '*'], \
+[' ', ' ', ' ', ' ', ' ', '9', ' ', '5', ' '], \
+[' ', '6', ' ', ' ', '8', '3', ' ', ' ', '*'], \
+['3', ' ', ' ', ' ', '1', ' ', ' ', '*', '*'], \
+[' ', ' ', '8', ' ', ' ', '2', '*', '*', '*'], \
+[' ', ' ', '2', ' ', ' ', '*', '*', '*', '*']]
+    """
+    new_board = [list(l) for l in board]
+    return new_board
+
+ def check_section(section: list) -> bool | None:
     """
     Check if a section:
     - contains numbers from 1 to 9
@@ -39,3 +68,10 @@ def check_section(section: list) -> bool | None:
         if i > 9:
             return False
     return True
+
+def columns():
+    pass
+def check_section():
+    pass
+def get_sections():
+    pass
