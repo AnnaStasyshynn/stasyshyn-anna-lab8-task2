@@ -18,7 +18,16 @@ def validate_board(board: list) -> bool:
     >>> validate_board(board)
     False
     """
-    pass
+    for n in board:
+        if not check_section(n):
+            return False
+    for n in columns(board):
+        if not check_section(n):
+            return False
+    for n in get_sections(board):
+        if not check_section(n):
+            return False
+    return True
 def get_sections(brd: list) -> list:
     """
     Get colored sections from board
