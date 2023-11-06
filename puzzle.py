@@ -82,7 +82,5 @@ def board_to_list(board: list) -> list[list]:
         if i > 9:
             return False
     return True
-def check_section():
-    pass
 def get_sections():
     pass
