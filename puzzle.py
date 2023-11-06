@@ -19,6 +19,20 @@ def validate_board(board: list) -> bool:
     False
     """
     pass
+def columns(board: list) -> list[list]:
+    """
+    Return a list of columns.
+    >>> columns(board)
+    [['*', '*', '*', '*', ' ', ' ', '3', ' ', ' '], ['*', '*', '*', ' ', ' ', '6', ' ', ' ', ' '], \
+['*', '*', ' ', '4', ' ', ' ', ' ', '8', '2'], ['*', '1', ' ', ' ', ' ', ' ', ' ', ' ', ' '], \
+[' ', ' ', '3', '1', ' ', '8', '1', ' ', ' '], ['*', '*', '*', '*', '9', '3', ' ', '2', '*'], \
+['*', '*', '*', '*', ' ', ' ', ' ', '*', '*'], ['*', '*', '*', '*', '5', ' ', '*', '*', '*'], \
+['*', '*', '*', '*', ' ', '*', '*', '*', '*']]
+    """
+    cols = []
+    for i in range(9):
+        cols.append([n[i] for n in board])
+    return cols
 def board_to_list(board: list) -> list[list]:
     """
     Turn board into a list of lists containing
@@ -68,7 +82,6 @@ def board_to_list(board: list) -> list[list]:
         if i > 9:
             return False
     return True
-
 def columns():
     pass
 def check_section():
