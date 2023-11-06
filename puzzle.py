@@ -1,6 +1,6 @@
 """
 Puzzle
-https://github.com/AnnaStasyshynn/stasyshyn-anna-lab8-task1.git
+https://github.com/AnnaStasyshynn/stasyshyn-anna-lab8-task2.git
 """
 def validate_board(board: list) -> bool:
     """
