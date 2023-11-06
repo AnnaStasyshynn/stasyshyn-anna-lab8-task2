@@ -19,3 +19,11 @@ def validate_board(board: list) -> bool:
     False
     """
     pass
+def board_to_list():
+    pass
+def columns():
+    pass
+def check_section():
+    pass
+def get_sections():
+    pass
