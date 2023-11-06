@@ -19,7 +19,6 @@ def validate_board(board: list) -> bool:
     False
     """
     pass
-
 def board_to_list(board: list) -> list[list]:
     """
     Turn board into a list of lists containing
@@ -48,3 +47,9 @@ def board_to_list(board: list) -> list[list]:
     """
     new_board = [list(l) for l in board]
     return new_board
+def columns():
+    pass
+def check_section():
+    pass
+def get_sections():
+    pass
